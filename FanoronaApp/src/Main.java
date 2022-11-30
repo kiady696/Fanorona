@@ -6,6 +6,8 @@ public class Main {
 		System.out.println("Bienvenue dans Fanorona ＼(￣▽￣)／");
 		
 		
+		
+		
 	}
 
 }
