@@ -20,7 +20,7 @@ public class Plateau {
 	 * Initialise un Plateau 
 	 */
 	public Plateau() {
-		this.cases = new Case[5][9];
+		this.cases = new Case[5][9]; // initialise les Cases avec leurs dimensions
 		this.assocNbLigne(); // associe la désignation d'une ligne avec son numéro
 		this.resetPlateau(); // initialise le plateau et place les pions en début de partie 
 	}

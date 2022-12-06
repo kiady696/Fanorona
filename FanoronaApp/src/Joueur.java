@@ -33,6 +33,19 @@ public class Joueur {
 	}
 	
 	//Constructeur
+	
+	/*
+	 * Constructeur simple au début de l'initialisation de la partie (sans renseignement)
+	 */
+	public Joueur() {
+		super();
+	}
+	
+	
+	/*
+	 * Constructeur qui initialise un Joueur après obtention de ses renseignements 
+	 * @return void
+	 */
 	public Joueur(String pseudo, boolean isRoundSide, boolean isFirst) {
 		this.setPseudo(pseudo);
 		this.setRoundSide(isRoundSide);

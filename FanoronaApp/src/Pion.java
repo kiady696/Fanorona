@@ -1,6 +1,6 @@
 
 /*
- * Un Pion qui se place sur le Plateau et qu'utilisera le Joueur
+ * @description Un Pion qui se place sur le Plateau et qu'utilisera le Joueur
  * @author Kiady
  */
 public class Pion {

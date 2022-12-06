@@ -18,7 +18,7 @@ public class Jeu {
 	
 	//Constructeur
 	/*
-	 * Crée un nouveau Jeu où le Plateau est réinitialisé
+	 * Crée un nouveau Jeu où le Plateau est initialisé et les Joueurs instanciés
 	 * @return void 
 	 */
 	public Jeu(Joueur j1, Joueur j2) {
@@ -29,17 +29,14 @@ public class Jeu {
 		// initialise ou ré-initialise le plateau
 		this.plateau = new Plateau(); 
 		
-		// déduit le tour actuel
-		if(j1.isHasTakenFirstTurn()) { // si j1 a choisi de prendre la main en premier
-			this.tourActuel = j1; // il sera le Joueur du tour actuel à l'instanciation du Jeu
-		}else {
-			this.tourActuel = j2; // Autrement c'est j2 qui le sera 
-		}
+		// TODO Mettre le truc trop long au début du Main ici
+		
 		this.mouvsDuTour.clear(); // purge la liste des mouvements , on rappelera cette fonction à chaque passage de main
 	}
 	
 	
 	//Methodes
+	
 	/*
 	 * Déduit qui a gagné le jeu en fonction du nombre de Pion de chaque Joueur sur le plateau
 	 * @return String : le pseudo du Joueur qui a gagné
@@ -70,6 +67,7 @@ public class Jeu {
 		return res;
 		
 	}
+	
 	
 	
 
