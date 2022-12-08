@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-/*
+/**
  * Le plateau de jeu composé de Cases
  * @author Kiady
  */
@@ -16,7 +16,7 @@ public class Plateau {
 	}
 
 	//Contructeur
-	/*
+	/**
 	 * Initialise un Plateau 
 	 */
 	public Plateau() {
@@ -28,13 +28,13 @@ public class Plateau {
 	
 	//Méthodes
 	
-	/*
+	/**
 	 * Retourne la case dont on spécifie l'abcisse et l'ordonnée
 	 * @param int x : l'abcisse de la Case
 	 * @param int y : l'ordonnée de la Case
 	 * @return Case : où l'on va avoir les détails de la Case demandé
 	 */
-	private Case getCase(int x, int y) throws Exception{
+	public Case getCase(int x, int y) throws Exception{
 		// Si l'on demande des coordonnées en dehors du Plateau
 		if(x < 0 || x > 9 || y < 0 || y > 5) {
 			throw new Exception("Coordonées en dehors de notre Plateau");
@@ -45,7 +45,7 @@ public class Plateau {
 	}
 	
 	
-	/*
+	/**
 	 * Réinitialise le Plateau
 	 * 
 	 */
@@ -108,7 +108,7 @@ public class Plateau {
 		
 	}
 	
-	/*
+	/**
 	 * Affiche le Plateau
 	 * @return String res : la représentation du Plateau actuel 
 	 */
@@ -136,7 +136,7 @@ public class Plateau {
 		
 	}
 	
-	/*
+	/**
 	 * Associe les lettres de lignes par des nombres 
 	 * @param int nb : le numéro de la ligne 
 	 * @return HashMap<String>, int : correspondance entre la lettre correspondante et le numéro de ligne 
@@ -151,12 +151,12 @@ public class Plateau {
 		this.associationLigneNumero = assoc;
 	}
 	
-	/*
+	/**
 	 * Retourne le nombre de Pions ronds et croix restants sur le plateau
 	 * @return HashMap<Pion, Integer> : Pion le type de pion et Integer son nombre
 	 */
-	public HashMap<Pion, Integer> getNbPions(){
-		HashMap<Pion, Integer> res =  new HashMap<Pion, Integer>();
+	public HashMap<String, Integer> getNbPions(){
+		HashMap<String, Integer> res =  new HashMap<String, Integer>();
 		int compteurRounds = 0;
 		int compteurCroix = 0;
 		for(int i = 0; i < this.getCases().length; i++) {
@@ -168,8 +168,8 @@ public class Plateau {
 				}
 			}
 		}
-		res.put(new Pion(false, true), compteurRounds);
-		res.put(new Pion(false, false), compteurCroix);
+		res.put("ronds", compteurRounds);
+		res.put("croix", compteurCroix);
 		return res;
 	}
 	

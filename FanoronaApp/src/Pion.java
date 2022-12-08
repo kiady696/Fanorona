@@ -1,5 +1,5 @@
 
-/*
+/**
  * @description Un Pion qui se place sur le Plateau et qu'utilisera le Joueur
  * @author Kiady
  */
@@ -20,7 +20,7 @@ public class Pion {
 	public boolean getIsRound() {
 		return isRound;
 	}
-	/*
+	/***
 	 * initialise le Pion comme étant un Pion rond ou croix
 	 * @param boolean isRound : false if we want to set the Pion as a Pion croix | true to set a Pion rond 
 	 * @return void
@@ -31,7 +31,7 @@ public class Pion {
 	
 	
 	//Constructeurs
-	/*
+	/**
 	 * Create a Pion 
 	 * @param boolean isKilled : false if to set a Pion for the first time
 	 * @param boolean isRound : false si on crée un Pion croix | true si on crée un Pion rond
@@ -45,7 +45,7 @@ public class Pion {
 	
 	//Méthodes
 	
-	/*
+	/**
 	 * Retourne le type de pion 
 	 * @return true si le Pion est de l'équipe des Pion rond | false si c'est un Pion croix
 	 */
@@ -58,16 +58,4 @@ public class Pion {
 	
 	
 	
-	/*
-	 * Check si le Pion peut effectuer un mouvement 
-	 * @param Mouvement mouv : inclus le Plateau, la Case depart, la Case arrivée ainsi que le Joueur qui veut faire le Mouvement 
-	 * @return boolean : true si le mouvement peut être fait | false sinon
-	 */
-	//public boolean canMove(Mouvement mouv) {
-		
-		// on le permet de faire tous les mouvements pour l'instant
-		//return true;
-	//}
-
-
 }

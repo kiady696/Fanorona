@@ -1,5 +1,5 @@
 
-/*
+/**
  * Le Joueur qui prendra un côté (soit l'équipe aux Pions ronds soit celui aux Pions croix)
  * @author Kiady
  */
@@ -34,15 +34,14 @@ public class Joueur {
 	
 	//Constructeur
 	
-	/*
+	/**
 	 * Constructeur simple au début de l'initialisation de la partie (sans renseignement)
 	 */
 	public Joueur() {
-		super();
 	}
 	
 	
-	/*
+	/**
 	 * Constructeur qui initialise un Joueur après obtention de ses renseignements 
 	 * @return void
 	 */
@@ -50,10 +49,12 @@ public class Joueur {
 		this.setPseudo(pseudo);
 		this.setRoundSide(isRoundSide);
 		this.setHasTakenFirstTurn(isFirst);
+		this.isHumanSide = true;
 	}
 	
 	
 	//Methodes
+	
 	
 	
 	

@@ -1,5 +1,5 @@
 
-/*
+/***
  * Une case qui constitue le Plateau de jeu 
  * @author Kiady
  */
@@ -12,7 +12,7 @@ public class Case {
 	
 	
 	//getters & setters
-	/*
+	/**
 	 * Retourne le Pion sur this Case
 	 * @return this.pion si il existe sur la Case | null si il n'y a pas de Pion sur la Case
 	 */
@@ -20,7 +20,7 @@ public class Case {
 		return pion;
 	}
 	
-	/*
+	/**
 	 * Met un Pion sur this Case
 	 * @param Pion pion : le Pion à mettre sur la case | null si on veut spécifier une Case vide
 	 */
@@ -44,7 +44,7 @@ public class Case {
 	
 
 	//Constructeur
-	/*
+	/**
 	 * Constructs a Case with its Pion and coordinates
 	 * @param Pion pion : null if its an empty Case
 	 * @param int x : abcisse coordinate of the Case
@@ -59,7 +59,7 @@ public class Case {
 	
 	
 	//Méthodes
-	/*
+	/**
 	 * Affichage d'une Case selon le Pion qui s'y trouve
 	 * @return String caseRepresentation : soit "o" si Pion rond | "x" si Pion croix | "+" si Case vide
 	 */
@@ -67,7 +67,7 @@ public class Case {
 		// initialisation du résultat 
 		String res = "";
 		if(this.pion == null) { // si le Pion est null (Case vide)
-			res = "+";
+			res = ".";
 		}else if(!this.getPion().isRound()) { // si le pion est croix
 			res = "x";
 		}else if(this.getPion().isRound()){ // si le pion est rond
