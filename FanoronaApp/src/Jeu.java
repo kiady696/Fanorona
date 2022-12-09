@@ -21,6 +21,9 @@ public class Jeu {
 	public Joueur getTourActuel() {
 		return this.tourActuel;
 	}
+	public void setTourActuel(Joueur j) {
+		this.tourActuel = j;
+	}
 	
 	
 	//Constructeur

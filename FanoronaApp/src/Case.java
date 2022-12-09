@@ -76,5 +76,17 @@ public class Case {
 		
 		return res;
 	}
+	
+	/**
+	 * Compare un case avec un autre selon leur coordonnées
+	 * @return boolean
+	 * @param Case caseToCompare
+	 */
+	public boolean compare(Case caseToCompare) {
+		if(this.getX() == caseToCompare.getX() && this.getY() == caseToCompare.getY()) {
+			return true;
+		}
+		return false;
+	}
 
 }
